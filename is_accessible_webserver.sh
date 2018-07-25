@@ -8,7 +8,6 @@ function is_accessible_webserver()
 	nc -v -z -w 3 $1 80 &> /dev/null && return 1 || return 0
 }
 
-
 # Fetch URL from params
 url=$1
 
