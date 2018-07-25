@@ -9,10 +9,13 @@ function is_accessible_webserver()
 }
 
 
-# Usage 
+# Fetch URL from params
 url=$1
 
+# Call function
 is_accessible_webserver $url
+
+# Check returned value
 if [ $? -eq 1 ]; then
 	printf "Valid webserver!\n"
 else
